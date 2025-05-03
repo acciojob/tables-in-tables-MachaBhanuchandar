@@ -1,2 +1,28 @@
 
 /* Your CSS Code here. */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.black-bg {
+    background-color: black;
+    color: white;
+}
