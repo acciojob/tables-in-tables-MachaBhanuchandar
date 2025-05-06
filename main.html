@@ -1,77 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <!-- Your code here -->
-	  <table class="outer-table">
-  <tr>
-    <td>
-      <table class="nested-table">
-        <caption>Nested Table 2</caption>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+    <style>
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .highlight {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
         <thead>
-          <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-          </tr>
+            <tr>
+                <th colspan="2">Nested Table 2</th>
+                <th colspan="2">Nested Table 1</th>
+            </tr>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+                <td rowspan="2">
+                    <ul>
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                        <li>List item 3</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>def</td>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>abc</td>
-            <td>def</td>
-          </tr>
+            <tr>
+                <th colspan="2">Nested Table 3</th>
+                <th>Nested Table 4</th>
+            </tr>
+            <tr>
+                <td>Nested Table</td>
+                <td>Demo Continued</td>
+                <td class="highlight">HTML</td>
+            </tr>
         </tbody>
-      </table>
-    </td>
-    <td>
-      <table class="nested-table">
-        <caption>Nested Table 1</caption>
-        <tbody>
-          <tr>
-            <td>
-              <ul class="nested-list">
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <table class="nested-table">
-        <caption>Nested Table 3</caption>
-        <tbody>
-          <tr>
-            <td>
-              <div class="nested-table-3-buttons">
-                <button>Nested Table</button>
-                <button>Demo Continued</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-    <td>
-      <table class="nested-table nested-table-4">
-        <caption>Nested Table 4</caption>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</table>
-	 
-  </body>
+    </table>
+</body>
 </html>
